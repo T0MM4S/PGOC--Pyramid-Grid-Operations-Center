@@ -16,7 +16,7 @@ PGOC turns dry meter telemetry into a **living situational‑awareness map**. In
 
 Critically, the risk numbers are **not random**. A **Python batch pipeline** computes genuine detection features from a labelled monthly consumption dataset, emits static JSON into `public/data/`, and the React app **replays it month‑by‑month** at runtime. So it stays a **front‑end‑only demo at run time** (no backend, no live SCADA hookup) — everything runs from `npm run dev` — while the figures behind it are real, peer‑statistics‑driven detections rather than mock drift.
 
-> ⚖️ **Ethics (non‑negotiable).** Every number is an **inspection priority**, never a theft confirmation. The UI/AI says *"flagged for inspection" / "i dyshuar"*, never *"confirmed theft"*. The HUD badge reads `REPLAY · <MONTH YEAR>` (never "LIVE"), and inspector‑cleared **`FALSE_POSITIVE`** cases are surfaced prominently to demonstrate fairness.
+> **Ethics (non‑negotiable).** Every number is an **inspection priority**, never a theft confirmation. The UI/AI says *"flagged for inspection" / "i dyshuar"*, never *"confirmed theft"*. The HUD badge reads `REPLAY · <MONTH YEAR>` (never "LIVE"), and inspector‑cleared **`FALSE_POSITIVE`** cases are surfaced prominently to demonstrate fairness.
 
 ---
 
@@ -89,7 +89,7 @@ To access the login page you can use one of the 3 users :
 1 username = operator, password = nexus2026,
 2 username = analyst, password = data2026,
 3 username = inspector, password = field2026.
-Go and try yourself 😉
+Go and try yourself 
 
 A 3D holographic digital twin of Tirana that uses AI to detect Non‑Technical Loss (NTL) — electricity theft, meter tampering, and illegal connections — across the city's distribution grid, on top of a live technical grid‑telemetry layer.
 
@@ -102,7 +102,7 @@ Technical layer (live, on the map). Every monitored zone is a node carrying live
 Non‑Technical layer (AI, in the panels & dashboard). The same zones are scored for NTL risk by a detection pipeline, and a Gemini‑powered assistant explains why a zone is suspicious and what to do about it — in Albanian, in the language a field inspector actually uses.
 Critically, the risk numbers are not random. A Python batch pipeline computes genuine detection features from a labelled monthly consumption dataset, emits static JSON into public/data/, and the React app replays it month‑by‑month at runtime. So it stays a front‑end‑only demo at run time (no backend, no live SCADA hookup) — everything runs from npm run dev — while the figures behind it are real, peer‑statistics‑driven detections rather than mock drift.
 
-⚖️ Ethics (non‑negotiable). Every number is an inspection priority, never a theft confirmation. The UI/AI says "flagged for inspection" / "i dyshuar", never "confirmed theft". The HUD badge reads REPLAY · <MONTH YEAR> (never "LIVE"), and inspector‑cleared FALSE_POSITIVE cases are surfaced prominently to demonstrate fairness.
+ Ethics (non‑negotiable). Every number is an inspection priority, never a theft confirmation. The UI/AI says "flagged for inspection" / "i dyshuar", never "confirmed theft". The HUD badge reads REPLAY · <MONTH YEAR> (never "LIVE"), and inspector‑cleared FALSE_POSITIVE cases are surfaced prominently to demonstrate fairness.
 
 What it's designed to do
 Visualize the grid as a digital twin. 13 zones across central Tirana (Skanderbeg Square, Blloku, Rinia Park, Tirana Tower, the University, the Artificial Lake, etc.) orbit around the Pyramid Command Center on a real 3D basemap with OSM buildings.
@@ -209,7 +209,7 @@ Three detector phases share the same UI contract (see `pipeline/README.md`):
 2. **Phase 2 — Isolation Forest** (unsupervised, scikit‑learn). Validated against `FLAG`; can blend into the displayed risk with `--apply`.
 3. **Phase 3 — XGBoost** (supervised, SGCC‑illustrative). Cross‑validated; reports ROC‑AUC / precision / recall and can `--apply`.
 
-> ⚠️ This is a **hackathon demo**. The roster (who/where/m²/floor) is fixed scaffolding; the consumption **shapes** are real (drawn from the labelled set, scaled per meter) and every risk number is computed from peer statistics. The supervised model is **illustrative of the production pipeline** and must be re‑calibrated on OSHEE ground truth before any operational use. Do not present it as a deployable Albanian fraud model.
+>  This is a **hackathon demo**. The roster (who/where/m²/floor) is fixed scaffolding; the consumption **shapes** are real (drawn from the labelled set, scaled per meter) and every risk number is computed from peer statistics. The supervised model is **illustrative of the production pipeline** and must be re‑calibrated on OSHEE ground truth before any operational use. Do not present it as a deployable Albanian fraud model.
 
 ---
 
@@ -262,7 +262,7 @@ Three detector phases share the same UI contract (see pipeline/README.md):
 Phase 1 — Rule‑based composite (stdlib only). The shipping default; re‑running build_dataset.py resets to this baseline.
 Phase 2 — Isolation Forest (unsupervised, scikit‑learn). Validated against FLAG; can blend into the displayed risk with --apply.
 Phase 3 — XGBoost (supervised, SGCC‑illustrative). Cross‑validated; reports ROC‑AUC / precision / recall and can --apply.
-⚠️ This is a hackathon demo. The roster (who/where/m²/floor) is fixed scaffolding; the consumption shapes are real (drawn from the labelled set, scaled per meter) and every risk number is computed from peer statistics. The supervised model is illustrative of the production pipeline and must be re‑calibrated on OSHEE ground truth before any operational use. Do not present it as a deployable Albanian fraud model.
+This is a hackathon demo. The roster (who/where/m²/floor) is fixed scaffolding; the consumption shapes are real (drawn from the labelled set, scaled per meter) and every risk number is computed from peer statistics. The supervised model is illustrative of the production pipeline and must be re‑calibrated on OSHEE ground truth before any operational use. Do not present it as a deployable Albanian fraud model.
 
 Roles & access (demo accounts)
 Username	Password	Role	Sees
