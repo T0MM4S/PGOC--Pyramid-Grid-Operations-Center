@@ -5,7 +5,12 @@
 
 Built for the **Innovation4Albania** challenge as an operations console for an **OSHEE‑style** energy distribution operator. The pyramid of Tirana is reimagined as the **Pyramid Command Center (PCC)** — the live hub of a city‑wide grid‑intelligence platform.
 
----
+
+
+
+--- Here is the link for the folks that dont have the time to do the cloning and also may experience some issues with the envoirment variables because of the github security -- : https://pgoc-pyramid-grid-operations-center.vercel.app/    --
+
+
 
 ## What it is
 
