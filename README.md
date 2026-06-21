@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # PGOC — Pyramid Grid Operations Center
 
 > A 3D holographic **digital twin of Tirana** that uses AI to detect **Non‑Technical Loss (NTL)** — electricity theft, meter tampering, and illegal connections — across the city's distribution grid, on top of a **live technical grid‑telemetry** layer.
