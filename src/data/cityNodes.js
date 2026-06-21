@@ -1,0 +1,96 @@
+export const cityNodes = [
+  // ── Original 5 ─────────────────────────────────
+  {
+    id: "skanderbeg",
+    title: "Skanderbeg Square",
+    category: "landmark",
+    lat: 41.3281, lon: 19.8187,
+    status: "ACTIVE",
+  },
+  {
+    id: "national-library",
+    title: "National Library",
+    category: "culture",
+    lat: 41.3310, lon: 19.8220,
+    status: "ACTIVE",
+  },
+  {
+    id: "tirana-tower",
+    title: "Tirana Tower",
+    category: "infrastructure",
+    lat: 41.3318, lon: 19.8355,
+    status: "ACTIVE",
+  },
+  {
+    id: "blloku",
+    title: "Blloku District",
+    category: "zone",
+    lat: 41.3168, lon: 19.8165,
+    status: "ACTIVE",
+  },
+  {
+    id: "rinia-park",
+    title: "Rinia Park",
+    category: "zone",
+    lat: 41.3258, lon: 19.8178,
+    status: "ACTIVE",
+  },
+
+  // ── New 8 ───────────────────────────────────────
+  {
+    id: "air-albania-stadium",
+    title: "Air Albania Stadium",
+    category: "infrastructure",
+    lat: 41.3305, lon: 19.8318,
+    status: "ACTIVE",
+  },
+  {
+    id: "artificial-lake",
+    title: "Artificial Lake",
+    category: "zone",
+    lat: 41.3390, lon: 19.8280,
+    status: "ACTIVE",
+  },
+  {
+    id: "palace-of-culture",
+    title: "Palace of Culture",
+    category: "culture",
+    lat: 41.3275, lon: 19.8195,
+    status: "ACTIVE",
+  },
+  {
+    id: "tirana-university",
+    title: "Tirana University",
+    category: "culture",
+    lat: 41.3195, lon: 19.8175,
+    status: "ACTIVE",
+  },
+  {
+    id: "tid-tower",
+    title: "TID Tower",
+    category: "infrastructure",
+    lat: 41.3290, lon: 19.8240,
+    status: "ACTIVE",
+  },
+  {
+    id: "grand-park",
+    title: "Grand Park",
+    category: "zone",
+    lat: 41.3135, lon: 19.8290,
+    status: "ACTIVE",
+  },
+  {
+    id: "tirana-castle",
+    title: "Tirana Castle",
+    category: "landmark",
+    lat: 41.3300, lon: 19.8180,
+    status: "ACTIVE",
+  },
+  {
+    id: "mother-teresa-square",
+    title: "Mother Teresa Sq",
+    category: "landmark",
+    lat: 41.3262, lon: 19.8195,
+    status: "ACTIVE",
+  },
+];

@@ -1,0 +1,17 @@
+# PGOC pipeline dependencies
+# ───────────────────────────
+# Phase 1 (build_dataset.py, features.py, score.py) needs NOTHING here — it is
+# pure Python stdlib so the demo JSON can always be regenerated.
+#
+# The packages below are only needed for the optional ML phases:
+#   Phase 2  isolation_forest.py  -> numpy, scikit-learn
+#   Phase 3  xgboost_model.py     -> xgboost, scikit-learn, pandas, numpy, joblib
+#   Phase 3  weather.py           -> stdlib only (no entry here)
+#
+#   pip install -r pipeline/requirements.txt
+
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+xgboost>=2.0
+joblib>=1.3
