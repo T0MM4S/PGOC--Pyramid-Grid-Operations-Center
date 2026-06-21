@@ -6,12 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
-*.local
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +16,46 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+.nyc_output
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components
+# Compiled binary addons
+build/Release
+# Build output
+dist
+dist-ssr
+out
+*.local
+# dotenv environment variable files
+.env
+.env.*
+!.env.example
+# Cache directories
+.cache
+.parcel-cache
+.eslintcache
+.stylelintcache
+.npm
+.next
+.nuxt
+.svelte-kit/
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+# Misc
+*.tgz
+.yarn-integrity
+.tsbuildinfo
+.node_repl_history
