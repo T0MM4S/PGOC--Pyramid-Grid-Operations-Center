@@ -3,6 +3,7 @@ import "./App.css";
 import MapViewer from "./components/MapViewer";
 import BootSequence from "./components/BootSequence";
 import { restoreSession, logout } from "./utils/authStore";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   // Rehydrate a persisted session (survives Vite HMR / reload) so a logged-in
@@ -26,6 +27,7 @@ function App() {
         />
       )}
       {booted && <MapViewer onLogout={handleLogout} />}
+      <Analytics />
     </>
   );
 }
