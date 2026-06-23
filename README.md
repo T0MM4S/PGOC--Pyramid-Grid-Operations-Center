@@ -149,7 +149,6 @@ Data at runtime	Static JSON in public/data/, fetched + replayed in‑browser via
 Charts	Hand‑rolled inline SVG (no chart library)
 Lang/tooling	JavaScript (JSX) + Python, ESLint
 Project structure
->>>>>>> 5dfcf291e70883a3b072680675319d12fa3e39ce
 src/
 ├─ main.jsx                 # Entry: awaits initDataLoader() then renders <App/>
 ├─ App.jsx                  # Boot/login gate → MapViewer (session‑persistent)
@@ -192,7 +191,7 @@ pipeline/                   # Python batch pipeline — see pipeline/README.md
 public/data/                # Generated static JSON consumed at runtime
 └─ computed_risk.json · customer_history.json · anomaly_log.json
    · model_metrics.json · inspections.json
-<<<<<<< HEAD
+
 ```
 
 ---
@@ -290,12 +289,10 @@ Create a .env file in the project root:
 VITE_CESIUM_TOKEN=your_cesium_ion_token
 VITE_GEMINI_API_KEY=your_gemini_api_key
 3. Run
->>>>>>> 5dfcf291e70883a3b072680675319d12fa3e39ce
 npm run dev      # start the dev server (http://localhost:5173)
 npm run build    # production build
 npm run preview  # preview the production build
 npm run lint     # lint
-<<<<<<< HEAD
 ```
 
 Log in with one of the demo accounts above to enter the operations center.
@@ -306,12 +303,10 @@ Log in with one of the demo accounts above to enter the operations center.
 Log in with one of the demo accounts above to enter the operations center.
 
 4. (Optional) Regenerate the detection data
->>>>>>> 5dfcf291e70883a3b072680675319d12fa3e39ce
 python pipeline/build_dataset.py             # Phase 1 — rebuilds public/data/*.json
 pip install -r pipeline/requirements.txt     # for the ML phases
 python pipeline/isolation_forest.py --apply  # Phase 2 (optional)
 python pipeline/xgboost_model.py --apply     # Phase 3 (optional)
-<<<<<<< HEAD
 ```
 See **`pipeline/README.md`** for the full run order, outputs, data schema, and ethics notes.
 
@@ -382,4 +377,3 @@ Persist inspections and outcomes to close the feedback loop (true/false positive
 Wire the technical‑telemetry layer to real feeder/transformer SCADA points and add geofenced feeder topology + crew dispatch.
 Harden auth (real IdP/SSO) and per‑role audit logging.
 PGOC · Pyramid Grid Operations Center — Innovation4Albania · AI Non‑Technical Loss Detection.
->>>>>>> 5dfcf291e70883a3b072680675319d12fa3e39ce
